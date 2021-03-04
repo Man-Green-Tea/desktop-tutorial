@@ -7,25 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            var a = document.getElementsByTagName('video')[0]
+            a.volume = 0.3
+        });
+    </script>
 </head>
 
 <body>
     <header>
         <div class="top">
-            <div class="top_box container">
-                <div>
-                    <h1 class="header">Product name</h1>
-                    <ul>
-                        <li class="top_list">Put on this page information about your product</li>
-                        <li class="top_list">A detailed description of your product</li>
-                        <li class="top_list">Tell us about the advantages and merits</li>
-                        <li class="top_list">Associate the page with the payment system</li>
-                    </ul>
+            <figure class="top_back">
+                <div class="top_box container">
+                    <figcaption>
+                        <h1 class="header">Product name</h1>
+                        <ul>
+                            <li class="top_list">Put on this page information about your product</li>
+                            <li class="top_list">A detailed description of your product</li>
+                            <li class="top_list">Tell us about the advantages and merits</li>
+                            <li class="top_list">Associate the page with the payment system</li>
+                        </ul>
+                    </figcaption>
+                    <div class="top_img"></div>
                 </div>
-                <div class="top_img"></div>
-            </div>
-            <div class="top_footer container">
-                <div class="top_footer_box">
+            </figure>
+            <figure class="top_footer container">
+                <figcaption class="top_footer_box">
                     <h2 class="heading">About your product</h2>
                     <p class="text">Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Nobis facilis fuga,
@@ -38,92 +46,97 @@
                         ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores.
                         Sequi itaque,
                         unde perferendis nemo debitis dolor.</p>
-                </div>
-                <div class="top_img2"></div>
-            </div>
+                </figcaption>
+                <div class="top_img2"><video controls preload autoplay loop height="245" width="430">
+                        <source src="media/a.webm.mp4" type="video/mp4">
+                    </video></div>
+            </figure>
         </div>
     </header>
-    <section class="pluses container">
-        <h2 class="pluses_heading heading">Dignity and pluses product</h2>
-        <div class="pluses_box">
-            <div class="pluses_block">
-                <div class=" pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
+    <section class="pluses_back">
+        <div class="pluses container">
+            <h2 class="pluses_heading heading">Dignity and pluses product</h2>
+            <div class="pluses_box">
+                <div class="pluses_block">
+                    <div class=" pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
+                    <div class="pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
+                    <div class="pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
                 </div>
-                <div class="pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
-                </div>
-                <div class="pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
-                </div>
-            </div>
-            <div class="pluses_block">
-                <div class="pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
-                </div>
-                <div class="pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
-                </div>
-                <div class="pluses_item"><img class="plus_img" src="img/plus-icon.svg" alt="plus">
-                    <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
-                        impedit iure placeat,
-                        ullam. Reprehenderit aliquam,
-                        nemo cum velit ratione perferendis quas,
-                        maxime,
-                        quaerat porro totam,
-                        dolore minus inventore.</p>
+                <div class="pluses_block">
+                    <div class="pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
+                    <div class="pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
+                    <div class="pluses_item"><img class="plus_img" src="img/cat.gif" alt="plus">
+                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit iure placeat,
+                            ullam. Reprehenderit aliquam,
+                            nemo cum velit ratione perferendis quas,
+                            maxime,
+                            quaerat porro totam,
+                            dolore minus inventore.</p>
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section class="screenshots container">
         <h2 class="screen_heading heading">Screenshots</h2>
         <div class="screen">
             <div class="screen_box screen_margin">
-                <div class="screen_item">
+                <figure class="screen_item">
                     <div class="screen_img"></div>
-                    <div class="screen_text">
+                    <figcaption class="screen_text">
                         <h3 class="screen_head">The description for the image</h3>
                         <p class="text">Pariatur iure ab sunt nesciunt,
                             quibusdam odio iste cumque itaque,
                             ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi
                             dolores. Sequi itaque,
                             unde perferendis nemo debitis dolor.</p>
-                    </div>
-                </div>
-                <div class="screen_item">
+                    </figcaption>
+                </figure>
+                <figure class="screen_item">
                     <div class="screen_img"></div>
-                    <div class="screen_text">
+                    <figcaption class="screen_text">
                         <h3 class="screen_head">The description for the image</h3>
                         <p class="text">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit. Nobis facilis fuga,
@@ -131,24 +144,24 @@
                             eligendi illum rerum omnis porro ex,
                             magni,
                             explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
             <div class="screen_box">
-                <div class="screen_item">
+                <figure class="screen_item">
                     <div class="screen_img"></div>
-                    <div class="screen_text">
+                    <figcaption class="screen_text">
                         <h3 class="screen_head">The description for the image</h3>
                         <p class="text">Pariatur iure ab sunt nesciunt,
                             quibusdam odio iste cumque itaque,
                             ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi
                             dolores. Sequi itaque,
                             unde perferendis nemo debitis dolor.</p>
-                    </div>
-                </div>
-                <div class="screen_item">
+                    </figcaption>
+                </figure>
+                <figure class="screen_item">
                     <div class="screen_img"></div>
-                    <div class="screen_text">
+                    <figcaption class="screen_text">
                         <h3 class="screen_head">The description for the image</h3>
                         <p class="text">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit. Nobis facilis fuga,
@@ -156,57 +169,57 @@
                             eligendi illum rerum omnis porro ex,
                             magni,
                             explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
-    <article class="comments container">
-        <h2 class="comm_heading heading">Reviews</h2>
-        <div class="comm">
+    <article class="comments">
+        <h2 class="comm_heading heading container">Reviews</h2>
+        <div class="comm container">
             <div class="comm_box comm_margin">
-                <div class="comm_item">
+                <figure class="comm_item">
                     <div class="comm_img"><img src="img/userpic.svg" alt="user"></div>
-                    <div class="comm_text">
+                    <figcaption class="comm_text">
                         <p class="comm_italics_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
                             inventore cum
                             odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus,
                             possimus officiis sapiente necessitatibus commodi consectetur?</p>
                         <p class="comm_white_text">Lourens S.</p>
-                    </div>
-                </div>
-                <div class="comm_item">
+                    </figcaption>
+                </figure>
+                <figure class="comm_item">
                     <div class="comm_img"><img src="img/userpic.svg" alt="user"></div>
-                    <div class="comm_text">
+                    <figcaption class="comm_text">
                         <p class="comm_italics_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
                             inventore cum
                             odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus,
                             possimus officiis sapiente necessitatibus commodi consectetur?</p>
                         <p class="comm_white_text">Lourens S.</p>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
             <div class="comm_box">
-                <div class="comm_item">
+                <figure class="comm_item">
                     <div class="comm_img"><img src="img/userpic.svg" alt="user"></div>
-                    <div class="comm_text">
+                    <figcaption class="comm_text">
                         <p class="comm_italics_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
                             inventore
                             cum
                             odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus,
                             possimus officiis sapiente necessitatibus commodi consectetur?</p>
                         <p class="comm_white_text">Lourens S.</p>
-                    </div>
-                </div>
-                <div class="comm_item">
+                    </figcaption>
+                </figure>
+                <figure class="comm_item">
                     <div class="comm_img"><img src="img/userpic.svg" alt="user"></div>
-                    <div class="comm_text">
+                    <figcaption class="comm_text">
                         <p class="comm_italics_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
                             inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
                             Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
                         <p class="comm_white_text">Lourens S.</p>
-                    </div>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </article>
@@ -261,16 +274,17 @@
             </div>
         </div>
     </section>
-    <footer class="footer container">
-        <h2 class="footer_head heading">Contacts</h2>
-        <div class="footer_items">
+    <footer class="footer">
+        <h2 class="footer_head heading container">Contacts</h2>
+        <div class="footer_items container">
             <form class="footer_form" action="#">
                 <input class="form__input" type="name" placeholder="Your name:">
                 <input class="form__input" type="email" placeholder="Your email:">
-                <textarea class="form__input" placeholder="Your message:" cols="30" rows="4"></textarea>
+                <textarea class="form__input" placeholder="Your message:" cols="30" rows="10"></textarea>
                 <button class="form__button" type="submit">SEND</button>
             </form>
-            <div class="footer_box">
+            <!-- сделать nav -->
+            <nav class="footer_box">
                 <div class="footer_list"><img src="img/skype.svg" alt="skype" class="footer_img">
                     <p class="footer_text">here_your_login_skype</p>
                 </div>
@@ -282,12 +296,12 @@
                 </div>
                 <div class="footer_list"><img src="img/phone.svg" alt="phone" class="footer_img">
                     <p class="footer_text">80 00 4568 55 55</p>
-                </div>>
+                </div>
                 <div class="footer_mess"><img src="img/twitter.svg" alt="twitter" class="footer_img_mess"><img
                         src="img/vk.svg" alt="vk" class="footer_img_mess"><img src="img/google.svg" alt="google"
                         class="footer_img_mess"><img src="img/facebook.svg" alt="facebook" class="footer_img_mess">
                 </div>
-            </div>
+            </nav>
         </div>
     </footer>
 </body>

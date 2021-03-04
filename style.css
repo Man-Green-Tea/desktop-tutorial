@@ -11,10 +11,13 @@
     margin: 0 auto;
 }
 
+.top_back {
+    background: #445161;
+}
+
 .top_box {
     display: flex;
     justify-content: space-between;
-    background: #445161;
     padding: 25px 50px 20px 50px;
 }
 
@@ -69,10 +72,13 @@
     background: #445161;
 }
 
+.pluses_back {
+    background: #F5F5F5;
+}
+
 .pluses {
     margin-top: 25px;
     padding-top: 25px;
-    background: #F5F5F5;
 }
 
 .pluses_heading {
@@ -290,15 +296,25 @@
     padding-bottom: 7px;
     margin-bottom: 18px;
     border-radius: 5px;
+
 }
 
 .form__button {
     align-self: center;
     padding: 12px 50px 7px 50px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #445162;
+    border-radius: 5px;
 }
 
 .footer_list {
     display: flex;
+    padding-bottom: 16px;
 }
 
 .footer_img {
